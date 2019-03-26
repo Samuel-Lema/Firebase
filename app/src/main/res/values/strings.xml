@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Chat Grupal</string>
+    <string name="action_settings">Opciones</string>
+    <string name="title_activity_chat_zone">Sala de Chat</string>
+</resources>

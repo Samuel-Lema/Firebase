@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "891355996897",
+    "firebase_url": "https://mydatabase-dca18.firebaseio.com",
+    "project_id": "mydatabase-dca18",
+    "storage_bucket": "mydatabase-dca18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700844041876:android:298d44e78a3c0ccc",
+        "android_client_info": {
+          "package_name": "com.gamemotion.mydatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700844041876-8j33689mc4osmtsi7jmkcgij6p8mkvjd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACvCGTlu3lz-117kCZLvXyASvshq1mhH0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
