@@ -22,8 +22,10 @@ class ChatZone : AppCompatActivity() {
         setContentView(R.layout.activity_chat_zone)
         setSupportActionBar(toolbar)
 
+        // Guardo la referencia de los mensajes de Firebase
         database = FirebaseDatabase.getInstance().getReference("/mensajes")
 
+        // Inicio el listener del boton que permite enviar los mensajes en el chat
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Mensaje enviado", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
@@ -39,11 +41,11 @@ class ChatZone : AppCompatActivity() {
             database!!.updateChildren(miHashMapChild)
         }
 
-
         outputChat.setMovementMethod(ScrollingMovementMethod())
         initListener()
     }
 
+    // Inicio el listener para que se sincronize con Firebase en algunas funciones
     private fun initListener() {
         val childEventListener = object : ChildEventListener {
             override fun onCancelled(p0: DatabaseError) {

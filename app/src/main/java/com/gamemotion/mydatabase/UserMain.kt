@@ -25,6 +25,7 @@ class UserMain : AppCompatActivity() {
 
         btnInicio.setOnClickListener { view ->
 
+            // Crea un usuario con el nombre que se quiera registrar en el chat
             Data.crearUsuario(txtUsername.text.toString() ,android.os.Build.MANUFACTURER+" "+android.os.Build.ID)
 
             miHashMapChild.put(FCMToken.toString(), Data.usuario)
