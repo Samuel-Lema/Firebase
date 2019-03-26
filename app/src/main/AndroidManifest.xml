@@ -11,16 +11,22 @@
             android:theme="@style/AppTheme">
         <activity android:name=".UserMain">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN"/>
 
-            <category android:name="android.intent.category.LAUNCHER"/>
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
         <activity
                 android:name=".ChatZone"
                 android:label="@string/title_activity_chat_zone"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
+
+        <service android:name=".MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
